@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: sans-serif;
+  padding: 0;
+}
+
+body {
+  background: #f1f5f8;
+  line-height: 2.2;
+}
+body nav {
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+body nav .nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+body nav .nav-header .fa-bars {
+  font-size: 1.5rem;
+  color: #e94949;
+  cursor: pointer;
+}
+body nav .nav-header .fa-bars:hover {
+  color: black;
+}
+body nav ul {
+  list-style-type: none;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+body nav ul a {
+  text-decoration: none;
+  color: grey;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+}
+body nav ul a:hover {
+  background: #f8a5a5;
+  color: #e94949;
+  padding-left: 1.5rem;
+}
+body .show-menu {
+  height: 10rem;
+}
+
+@media (min-width: 800px) {
+  .nav-main {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-main .nav-header {
+    padding: 0;
+  }
+  .nav-main .nav-header .fa-bars {
+    display: none;
+  }
+  .nav-main .menu {
+    height: auto;
+    display: flex;
+  }
+  .nav-main .menu a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .nav-main .menu a:hover {
+    padding: 0;
+    background: transparent;
+  }
+}/*# sourceMappingURL=style.css.map */
